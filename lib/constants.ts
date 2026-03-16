@@ -1,14 +1,13 @@
 export const siteConfig = {
   name: "Iknos Docket",
-  title: "Iknos Docket | Ontario criminal disclosure, organized for defence review.",
   description:
-    "Iknos Docket helps Ontario criminal defence counsel review disclosure, organize case material, surface issues, and work through defence workflow with greater structure and less drag.",
-  url: "https://www.iknosdocket.com",
+    "A legal workflow product built for Ontario criminal defence review and organization.",
   nav: [
-    { href: "/product", label: "Product" },
-    { href: "/trust", label: "Trust" },
-    { href: "/demo", label: "Request a Demo" },
-    { href: "/pilot", label: "Apply for Pilot" },
-    { href: "/contact", label: "Contact" }
-  ]
+    { label: "Home", href: "/" },
+    { label: "Product", href: "/product" },
+    { label: "Trust", href: "/trust" },
+    { label: "Request a Demo", href: "/demo" },
+    { label: "Apply for Pilot", href: "/pilot" },
+    { label: "Contact", href: "/contact" },
+  ],
 };
