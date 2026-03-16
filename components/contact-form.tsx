@@ -37,16 +37,21 @@ export function ContactForm() {
     <form onSubmit={onSubmit} className="rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-8">
       <input type="hidden" name="sourcePage" value="/contact" />
       <div className="grid gap-5 md:grid-cols-2">
-        <TextField label="Name" name="name" required />
-        <TextField label="Email" name="email" type="email" required />
+        <TextField label="Full name" name="name" required />
+        <TextField label="Email address" name="email" type="email" required />
       </div>
       <div className="mt-5 grid gap-5">
         <TextField label="Subject" name="subject" required />
-        <TextAreaField label="Message" name="message" required />
+        <TextAreaField
+          label="Message"
+          name="message"
+          required
+          placeholder="Keep it direct. Basic context is enough."
+        />
       </div>
       {error ? <p className="mt-4 text-sm text-[var(--accent)]">{error}</p> : null}
       <button type="submit" className="btn btn-primary mt-6" disabled={isSubmitting}>
-        {isSubmitting ? "Sending..." : "Send Message"}
+        {isSubmitting ? "Sending..." : "Send Inquiry"}
       </button>
     </form>
   );

@@ -42,7 +42,7 @@ export function DemoForm() {
         <TextField label="Firm / organization" name="firm" required />
         <TextField label="Role / title" name="role" required />
         <TextField label="Province / jurisdiction" name="jurisdiction" placeholder="Ontario" required />
-        <SelectField label="Practice area" name="practiceArea" required>
+        <SelectField label="Primary practice area" name="practiceArea" required>
           <option value="">Select</option>
           <option>Criminal Defence</option>
           <option>Mixed Practice</option>
@@ -59,15 +59,15 @@ export function DemoForm() {
       </div>
       <div className="mt-5">
         <TextAreaField
-          label="What would you like to see in the demo?"
+          label="What would you like the demo to focus on?"
           name="demoFocus"
           required
-          placeholder="Tell us what part of the workflow matters most to you."
+          placeholder="Briefly tell us which part of the workflow matters most to you."
         />
       </div>
       {error ? <p className="mt-4 text-sm text-[var(--accent)]">{error}</p> : null}
       <button type="submit" className="btn btn-primary mt-6" disabled={isSubmitting}>
-        {isSubmitting ? "Submitting..." : "Submit Demo Request"}
+        {isSubmitting ? "Submitting..." : "Request Demo"}
       </button>
     </form>
   );

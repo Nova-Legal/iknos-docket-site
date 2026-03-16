@@ -43,7 +43,7 @@ export function PilotForm() {
         <TextField label="Firm / organization" name="firm" required />
         <TextField label="Role / title" name="role" required />
         <TextField label="Province / jurisdiction" name="jurisdiction" placeholder="Ontario" required />
-        <TextField label="Practice area" name="practiceArea" value="Criminal Defence" readOnly required />
+        <TextField label="Primary practice area" name="practiceArea" value="Criminal Defence" readOnly required />
         <SelectField label="Team size" name="teamSize" required>
           <option value="">Select</option>
           <option>Solo</option>
@@ -57,9 +57,9 @@ export function PilotForm() {
           <option>Light</option>
           <option>Moderate</option>
           <option>Heavy</option>
-          <option>Very Heavy</option>
+          <option>Very heavy</option>
         </SelectField>
-        <SelectField label="Structured feedback during pilot" name="structuredFeedback" required>
+        <SelectField label="Able to provide structured feedback during pilot" name="structuredFeedback" required>
           <option value="">Select</option>
           <option>Yes</option>
           <option>No</option>
@@ -80,22 +80,26 @@ export function PilotForm() {
       </div>
       <div className="mt-5 grid gap-5">
         <TextAreaField
-          label="Current workflow challenges"
+          label="Current workflow pressure points"
           name="workflowChallenges"
           required
-          placeholder="Describe the operational friction you want to reduce."
+          placeholder="Briefly describe the operational friction you want to reduce."
         />
         <TextAreaField
-          label="What interests you about Iknos Docket?"
+          label="Why are you interested in Iknos Docket?"
           name="interest"
           required
-          placeholder="Tell us why you are looking at the product now."
+          placeholder="Tell us why this may be worth evaluating now."
         />
-        <TextAreaField label="Anything else we should know?" name="anythingElse" />
+        <TextAreaField
+          label="Anything else we should know?"
+          name="anythingElse"
+          placeholder="Optional."
+        />
       </div>
       {error ? <p className="mt-4 text-sm text-[var(--accent)]">{error}</p> : null}
       <button type="submit" className="btn btn-primary mt-6" disabled={isSubmitting}>
-        {isSubmitting ? "Submitting..." : "Submit Pilot Application"}
+        {isSubmitting ? "Submitting..." : "Apply for Pilot"}
       </button>
     </form>
   );
