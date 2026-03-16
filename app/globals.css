@@ -491,3 +491,32 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+.legal-page {
+  max-width: 72rem;
+}
+
+.legal-stack {
+  display: grid;
+  gap: 2rem;
+  max-width: 64rem;
+}
+
+.legal-stack section {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.legal-stack h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.legal-stack p {
+  margin: 0;
+  line-height: 1.85;
+}
+
+.legal-stack .clean-list {
+  margin-top: 0.2rem;
+}
