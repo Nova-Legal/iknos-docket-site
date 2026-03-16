@@ -1,5 +1,7 @@
 export const siteConfig = {
   name: "Iknos Docket",
+  title: "Iknos Docket",
+  url: "https://iknos-docket-site.vercel.app",
   description:
     "A legal workflow product built for Ontario criminal defence review and organization.",
   nav: [
