@@ -1,43 +1,76 @@
-import { Hero } from "@/components/hero";
-import { Section } from "@/components/section";
 import { DemoForm } from "@/components/demo-form";
 
 export default function DemoPage() {
   return (
-    <>
-      <Hero
-        eyebrow="Request a Demo"
-        title="See Iknos Docket in context."
-        description="If you want to see how Iknos Docket is intended to fit Ontario criminal defence workflow, request a demo. The walkthrough should be concise, practical, and product-focused. No inflated sales theatre."
-      />
-
-      <Section title="What to expect" intro="The goal is a straight answer on fit.">
-        <div className="grid-list md:grid-cols-2">
-          {[
-            "A short walkthrough",
-            "Product scope and intended workflow fit",
-            "Discussion of your practice context",
-            "A direct answer on whether it looks like a fit"
-          ].map((item) => (
-            <div key={item} className="card">
-              <p className="font-semibold">{item}</p>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      <section className="section">
-        <div className="container max-w-4xl">
-          <p className="eyebrow">Demo request form</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight">Submit your request and we&apos;ll follow up by email.</h2>
-          <p className="mt-4 max-w-2xl text-base leading-8 text-[var(--muted)]">
-            Keep it simple. Tell us who you are, what kind of practice you run, and what you most want to see.
+    <section className="section">
+      <div className="container page-stack">
+        <div className="page-hero">
+          <p className="eyebrow">Request a demo</p>
+          <h1>See whether Iknos Docket fits your practice.</h1>
+          <p className="page-lead">
+            Request a direct walkthrough of the product and its intended role in
+            Ontario criminal defence workflow.
           </p>
-          <div className="mt-8">
+        </div>
+
+        <div className="content-grid">
+          <div>
+            <h2>What the demo is for</h2>
+            <p>
+              The demo is meant for lawyers and firms who want to understand how
+              Iknos Docket approaches disclosure review, case organization,
+              issue-focused workflow, and working-file clarity.
+            </p>
+            <p>
+              It is a practical product walkthrough, not a generic sales call.
+            </p>
+          </div>
+
+          <div>
+            <h2>What to expect</h2>
+            <ul className="clean-list">
+              <li>A direct overview of the product and workflow</li>
+              <li>A clearer sense of where it fits in practice</li>
+              <li>Space to raise operational questions</li>
+              <li>A straightforward next-step discussion if relevant</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="content-grid">
+          <div>
+            <h2>Who should request a demo</h2>
+            <ul className="clean-list">
+              <li>Solo criminal defence counsel</li>
+              <li>Small criminal defence firms</li>
+              <li>Teams evaluating review and organization workflow</li>
+              <li>Practices dealing with disclosure-heavy matters</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Before you submit</h2>
+            <p>
+              Use this form if you want a direct walkthrough. If you are looking
+              for a deeper evaluation inside an active practice environment, the
+              pilot application may be the better route.
+            </p>
+          </div>
+        </div>
+
+        <div className="content-grid">
+          <div>
+            <h2>Request a demo</h2>
+            <p className="section-lead">
+              Keep it simple. We only need the basics to follow up.
+            </p>
+          </div>
+
+          <div>
             <DemoForm />
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
