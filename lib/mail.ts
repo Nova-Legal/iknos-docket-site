@@ -19,9 +19,30 @@ function formatRows(entries: Array<[string, string | undefined]>) {
     .join("\n");
 }
 
-export async function sendDemoEmail(fields: Record<string, string>) {
+async function sendOrThrow(payload: {
+  from: string;
+  to: string;
+  replyTo: string;
+  subject: string;
+  html: string;
+}) {
   assertMailConfig();
+
   const resend = new Resend(resendApiKey);
+  const result = await resend.emails.send(payload);
+
+  console.log("RESEND_RESULT", JSON.stringify(result, null, 2));
+
+  if ("error" in result && result.error) {
+    throw new Error(
+      `Resend send failed: ${result.error.message || JSON.stringify(result.error)}`
+    );
+  }
+
+  return result;
+}
+
+export async function sendDemoEmail(fields: Record<string, string>) {
   const subject = `[Demo Request] ${fields.fullName} — ${fields.firm}`;
   const html = `
     <h2>Iknos Docket Demo Request</h2>
@@ -39,12 +60,16 @@ export async function sendDemoEmail(fields: Record<string, string>) {
     ])}
   `;
 
-  await resend.emails.send({ from: from!, to: to!, replyTo: fields.workEmail, subject, html });
+  return sendOrThrow({
+    from: from!,
+    to: to!,
+    replyTo: fields.workEmail,
+    subject,
+    html
+  });
 }
 
 export async function sendPilotEmail(fields: Record<string, string>) {
-  assertMailConfig();
-  const resend = new Resend(resendApiKey);
   const subject = `[Pilot Application] ${fields.fullName} — ${fields.firm}`;
   const html = `
     <h2>Iknos Docket Pilot Application</h2>
@@ -69,12 +94,16 @@ export async function sendPilotEmail(fields: Record<string, string>) {
     ])}
   `;
 
-  await resend.emails.send({ from: from!, to: to!, replyTo: fields.workEmail, subject, html });
+  return sendOrThrow({
+    from: from!,
+    to: to!,
+    replyTo: fields.workEmail,
+    subject,
+    html
+  });
 }
 
 export async function sendContactEmail(fields: Record<string, string>) {
-  assertMailConfig();
-  const resend = new Resend(resendApiKey);
   const subject = `[Contact] ${fields.subject}`;
   const html = `
     <h2>Iknos Docket Contact Inquiry</h2>
@@ -87,5 +116,11 @@ export async function sendContactEmail(fields: Record<string, string>) {
     ])}
   `;
 
-  await resend.emails.send({ from: from!, to: to!, replyTo: fields.email, subject, html });
+  return sendOrThrow({
+    from: from!,
+    to: to!,
+    replyTo: fields.email,
+    subject,
+    html
+  });
 }
