@@ -6,32 +6,31 @@ export default function PilotThankYouPage() {
       <div className="container page-stack">
         <div className="page-hero">
           <p className="eyebrow">Pilot application received</p>
-          <h1>Thank you. Your pilot application has been received.</h1>
+          <h1>Your application has been submitted.</h1>
           <p className="page-lead">
-            We will review the context you submitted and assess whether a pilot
-            evaluation appears to be a serious fit.
+            Thank you for applying to the Iknos Docket pilot. We will review the
+            submission for practice fit, workflow need, and operational relevance.
           </p>
         </div>
 
         <div className="content-grid">
           <div>
-            <h2>What happens next</h2>
+            <h2>How applications are reviewed</h2>
             <p>
-              Pilot applications are reviewed more selectively than standard
-              demo requests.
+              Pilot requests are assessed to determine whether the use case
+              appears serious enough and suitable enough for further evaluation.
             </p>
             <p>
-              We will assess the practice context, the stated workflow needs,
-              and whether the product appears operationally relevant enough to
-              evaluate more closely.
+              Submission of an application does not guarantee acceptance. It is
+              a request to assess whether a pilot makes sense.
             </p>
           </div>
 
           <div>
             <h2>In the meantime</h2>
             <p>
-              You can return to the homepage, review the product overview, or
-              read the trust, privacy, and security page.
+              You can review the product overview, return to the homepage, or
+              request a direct demo if you mainly want a clearer walkthrough.
             </p>
             <div className="hero-actions">
               <Link href="/" className="btn btn-secondary">
@@ -40,8 +39,8 @@ export default function PilotThankYouPage() {
               <Link href="/product" className="btn btn-secondary">
                 Product Overview
               </Link>
-              <Link href="/trust" className="btn btn-primary">
-                Trust Page
+              <Link href="/demo" className="btn btn-primary">
+                Request a Demo
               </Link>
             </div>
           </div>

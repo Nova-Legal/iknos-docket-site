@@ -6,11 +6,12 @@ export default function TrustPage() {
       <div className="container page-stack">
         <div className="page-hero">
           <p className="eyebrow">Trust, privacy, and security</p>
-          <h1>A serious posture for serious legal work.</h1>
+          <h1>A more serious operating posture for legal work.</h1>
           <p className="page-lead">
-            Iknos Docket is intended for confidentiality-sensitive legal
-            workflow. The public posture should be restrained, clear, and
-            grounded in the realities of criminal defence practice.
+            Iknos Docket is built for confidentiality-sensitive criminal defence
+            workflow. The trust posture is intentionally restrained: clear
+            claims, disciplined handling, and a product position grounded in the
+            realities of legal review rather than startup theatre.
           </p>
         </div>
 
@@ -18,27 +19,28 @@ export default function TrustPage() {
           <div>
             <h2>Built for lawyer-readable work</h2>
             <p>
-              The product is designed to support legal review and working-file
-              organization in a form that remains readable and usable to
+              The product is designed to support disclosure review, working-file
+              structure, and issue development in a form that remains legible to
               counsel.
             </p>
             <p>
-              It is not built around novelty language, inflated claims, or
-              theatrical product positioning. The aim is practical utility and
-              disciplined workflow support.
+              That means practical structure over novelty, disciplined workflow
+              over inflated language, and a product surface that can hold up
+              inside real defence work.
             </p>
           </div>
 
           <div>
-            <h2>Confidentiality-sensitive posture</h2>
+            <h2>Confidentiality-sensitive by design</h2>
             <p>
-              Legal work requires a more careful trust posture than ordinary
+              Criminal defence work carries different expectations from ordinary
               office software. Disclosure, evidence, issues, and preparation
-              material can be sensitive, fragmented, and operationally important.
+              material can be sensitive, fragmented, and operationally critical.
             </p>
             <p>
-              For that reason, Iknos Docket is presented as a serious workflow
-              product, not a casual productivity tool.
+              For that reason, Iknos Docket is positioned as a serious legal
+              workflow product, not as a casual productivity tool and not as a
+              consumer-style AI layer sitting on top of legal work.
             </p>
           </div>
         </div>
@@ -47,22 +49,22 @@ export default function TrustPage() {
           <div>
             <h2>What the product is meant to support</h2>
             <ul className="clean-list">
-              <li>Organized review of disclosure and case material</li>
-              <li>Clearer working-file structure across a matter</li>
+              <li>Structured review of disclosure and case material</li>
+              <li>Clearer working-file continuity across a matter</li>
               <li>Issue-focused review and preparation workflow</li>
-              <li>More coherent handling of fragmented file material</li>
-              <li>Support for counsel control and continuity over time</li>
+              <li>More coherent handling of fragmented material</li>
+              <li>Stronger counsel control over file organization and visibility</li>
             </ul>
           </div>
 
           <div>
-            <h2>What the product is not meant to do</h2>
+            <h2>What the product is not</h2>
             <ul className="clean-list">
               <li>It does not provide legal advice</li>
               <li>It does not replace counsel’s judgment</li>
               <li>It does not replace legal obligations or professional duties</li>
               <li>It is not a law firm or legal representative</li>
-              <li>It is not a substitute for lawyer review</li>
+              <li>It is not a substitute for lawyer review and decision-making</li>
             </ul>
           </div>
         </div>
@@ -72,13 +74,13 @@ export default function TrustPage() {
             <h2>Privacy and operational handling</h2>
             <p>
               Privacy expectations in legal workflow are not optional. Product
-              decisions, messaging, and workflow design should reflect that
-              reality.
+              design, language, and operating decisions should reflect that from
+              the start.
             </p>
             <p>
-              The product is intended to reduce friction in review and
-              organization while maintaining a serious operational posture toward
-              legal material.
+              The aim is not to make legal work look flashy. The aim is to make
+              review and organization more controlled, more usable, and more
+              durable under real file pressure.
             </p>
           </div>
 
@@ -86,8 +88,8 @@ export default function TrustPage() {
             <h2>Need more detail?</h2>
             <p>
               For formal legal and policy language, review the Privacy Policy
-              and Terms of Use. For practical evaluation, request a demo or
-              apply for the pilot.
+              and Terms of Use. For practical evaluation, request a demo to see
+              the workflow directly.
             </p>
             <div className="hero-actions">
               <Link href="/privacy" className="btn btn-secondary">

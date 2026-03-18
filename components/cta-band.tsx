@@ -7,10 +7,11 @@ export function CtaBand() {
         <div className="cta-band">
           <p className="eyebrow">Next step</p>
           <h2 className="cta-band__title">
-            See whether Iknos Docket fits your practice.
+            See whether Iknos Docket fits the realities of criminal defence work.
           </h2>
           <p className="cta-band__text">
-            Request a demo for a direct walkthrough, or apply for the pilot if you are evaluating operational fit inside an active criminal defence practice.
+            Request a demo for a direct walkthrough, or apply for the pilot if
+            you are evaluating operational fit inside active defence workflow.
           </p>
           <div className="cta-band__actions">
             <Link href="/demo" className="btn btn-primary">

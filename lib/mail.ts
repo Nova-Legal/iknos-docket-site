@@ -12,10 +12,23 @@ function assertMailConfig() {
   }
 }
 
+function escapeHtml(value: string) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
 function formatRows(entries: Array<[string, string | undefined]>) {
   return entries
     .filter(([, value]) => value && value.trim().length > 0)
-    .map(([label, value]) => `<p><strong>${label}:</strong><br/>${value}</p>`)
+    .map(([label, value]) => {
+      const safeLabel = escapeHtml(label);
+      const safeValue = escapeHtml(value!);
+      return `<p><strong>${safeLabel}:</strong><br/>${safeValue}</p>`;
+    })
     .join("\n");
 }
 

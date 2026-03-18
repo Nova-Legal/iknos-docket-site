@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { ZodError } from "zod";
 import { contactSchema } from "@/lib/validation";
 import { sendContactEmail } from "@/lib/mail";
 
@@ -9,7 +10,18 @@ export async function POST(request: Request) {
     await sendContactEmail(data as Record<string, string>);
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("Contact form error", error);
-    return NextResponse.json({ ok: false, message: "Invalid request" }, { status: 400 });
+    if (error instanceof ZodError) {
+      console.error("Contact form validation error", error.flatten());
+      return NextResponse.json(
+        { ok: false, message: "Invalid request data" },
+        { status: 400 }
+      );
+    }
+
+    console.error("Contact form server error", error);
+    return NextResponse.json(
+      { ok: false, message: "Unable to process request right now" },
+      { status: 500 }
+    );
   }
 }

@@ -6,9 +6,10 @@ export default function ContactThankYouPage() {
       <div className="container page-stack">
         <div className="page-hero">
           <p className="eyebrow">Message received</p>
-          <h1>Thank you. Your message has been received.</h1>
+          <h1>Your message has been submitted.</h1>
           <p className="page-lead">
-            We will review the inquiry and reply through the appropriate route.
+            Thank you for contacting Iknos Docket. We will review the inquiry
+            and follow up with the most appropriate next step.
           </p>
         </div>
 
@@ -16,30 +17,30 @@ export default function ContactThankYouPage() {
           <div>
             <h2>What happens next</h2>
             <p>
-              General inquiries are reviewed and routed according to their
-              purpose.
+              We review contact requests to understand the nature of the inquiry
+              and whether it is best handled as a general response, a demo, or a
+              pilot discussion.
             </p>
             <p>
-              If your message is better suited to a demo or pilot path, we may
-              direct you there instead.
+              Follow-up timing may vary depending on the request and the context provided.
             </p>
           </div>
 
           <div>
-            <h2>In the meantime</h2>
+            <h2>Useful next steps</h2>
             <p>
               You can return to the homepage, review the product overview, or
-              read the trust, privacy, and security page.
+              go directly to the demo or pilot pages.
             </p>
             <div className="hero-actions">
               <Link href="/" className="btn btn-secondary">
                 Back to Home
               </Link>
-              <Link href="/product" className="btn btn-secondary">
-                Product Overview
+              <Link href="/demo" className="btn btn-secondary">
+                Request a Demo
               </Link>
-              <Link href="/trust" className="btn btn-primary">
-                Trust Page
+              <Link href="/pilot" className="btn btn-primary">
+                Apply for Pilot
               </Link>
             </div>
           </div>

@@ -8,8 +8,10 @@ export default function ProductPage() {
           <p className="eyebrow">Product overview</p>
           <h1>A more usable criminal defence working file.</h1>
           <p className="page-lead">
-            Iknos Docket helps transform disclosure and case material into a
-            more structured review environment for Ontario criminal defence matters.
+            Iknos Docket is built to help criminal defence counsel turn
+            disclosure volume into a clearer review environment: stronger file
+            structure, better continuity, and more disciplined movement toward
+            preparation.
           </p>
           <div className="hero-actions">
             <Link href="/demo" className="btn btn-primary">
@@ -25,13 +27,14 @@ export default function ProductPage() {
           <div>
             <h2>What Iknos Docket does</h2>
             <p>
-              At a practical level, it helps counsel move from document volume
-              to working structure.
+              At a practical level, the product helps counsel move from raw
+              disclosure and scattered material toward a more controlled working
+              file.
             </p>
             <p>
-              It is designed to help with organizing case material, reviewing
-              disclosure more systematically, tracking issues and pressure
-              points, and keeping the defence file more coherent as the matter
+              That includes stronger organization of case material, more
+              structured review, better visibility into issues and pressure
+              points, and a file that remains more coherent as the matter
               develops.
             </p>
           </div>
@@ -39,13 +42,14 @@ export default function ProductPage() {
           <div>
             <h2>What that means in practice</h2>
             <p>
-              Instead of treating disclosure as a pile of disconnected material,
-              Iknos Docket is meant to support a more disciplined working file:
-              clearer structure, clearer review, and clearer movement toward
-              defence preparation.
+              Instead of treating disclosure as a pile of disconnected inputs,
+              Iknos Docket is intended to support a more disciplined review
+              environment: clearer structure, clearer continuity, and clearer
+              progress toward defence preparation.
             </p>
             <p>
-              The goal is not to add noise. The goal is to reduce drag.
+              The point is not to add another layer of software noise. The point
+              is to reduce friction inside the file.
             </p>
           </div>
         </div>
@@ -55,11 +59,11 @@ export default function ProductPage() {
             <h2>Core workflow support</h2>
             <ul className="clean-list">
               <li>Disclosure review</li>
-              <li>Case organization</li>
+              <li>Case-material organization</li>
               <li>Issue spotting and issue review</li>
               <li>Evidence and document structure</li>
-              <li>Defence preparation workflow</li>
-              <li>Working-file clarity across a matter</li>
+              <li>Preparation workflow</li>
+              <li>Working-file clarity across the life of a matter</li>
             </ul>
           </div>
 
@@ -68,10 +72,10 @@ export default function ProductPage() {
             <ul className="clean-list">
               <li>Built for lawyer-readable review</li>
               <li>Supports counsel judgment rather than replacing it</li>
-              <li>Intended for confidentiality-sensitive workflow</li>
-              <li>Aims to reduce fragmentation across the file</li>
+              <li>Intended for confidentiality-sensitive legal workflow</li>
+              <li>Reduces fragmentation across the file</li>
               <li>Helps surface pressure points earlier</li>
-              <li>Keeps preparation grounded in organized material</li>
+              <li>Keeps preparation anchored to organized material</li>
             </ul>
           </div>
         </div>
@@ -80,23 +84,24 @@ export default function ProductPage() {
           <div>
             <h2>What it is not</h2>
             <p>
-              Iknos Docket is not a law firm, does not provide legal advice,
-              and does not replace counsel’s professional duties, legal
-              judgment, or case theory.
+              Iknos Docket is not a law firm, does not provide legal advice, and
+              does not replace counsel’s professional duties, legal judgment, or
+              case theory.
             </p>
             <p>
-              It is a legal workflow product built to support review,
-              organization, and preparation in a more usable environment.
+              It is a legal workflow product intended to support review,
+              organization, and preparation in a more usable and more controlled
+              working environment.
             </p>
           </div>
 
           <div>
             <h2>Next step</h2>
             <p>
-              If you want to see whether Iknos Docket fits your practice,
-              request a demo for a direct walkthrough or apply for the pilot if
-              you are evaluating operational fit inside an active criminal
-              defence practice.
+              If you want to evaluate whether Iknos Docket fits your practice,
+              request a demo for a direct walkthrough. If you are evaluating
+              operational fit inside active criminal defence work, apply for the
+              pilot.
             </p>
             <div className="hero-actions">
               <Link href="/demo" className="btn btn-primary">
