@@ -1,4 +1,5 @@
 import { ContactForm } from "@/components/contact-form";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -9,7 +10,7 @@ export default function ContactPage() {
           <h1>Get in touch about Iknos Docket.</h1>
           <p className="page-lead">
             Use this page for general product inquiries, follow-up questions,
-            or other business contact related to Iknos Docket.
+            and business contact related to Iknos Docket.
           </p>
         </div>
 
@@ -41,8 +42,33 @@ export default function ContactPage() {
           <div>
             <h2>What to expect</h2>
             <p>
-              Keep the message direct. Basic context is enough. We will review
-              the inquiry and reply through the appropriate route.
+              We review contact requests to understand the nature of the inquiry
+              and the most appropriate next step.
+            </p>
+            <p>
+              Depending on the request, follow-up may direct you toward a demo,
+              pilot, or a more general response.
+            </p>
+          </div>
+
+          <div>
+            <h2>Useful next steps</h2>
+            <div className="hero-actions">
+              <Link href="/demo" className="btn btn-secondary">
+                Request a Demo
+              </Link>
+              <Link href="/pilot" className="btn btn-secondary">
+                Apply for Pilot
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="content-grid">
+          <div>
+            <h2>Contact form</h2>
+            <p className="section-lead">
+              Give enough context for us to understand the inquiry clearly.
             </p>
           </div>
 

@@ -6,10 +6,10 @@ export default function DemoThankYouPage() {
       <div className="container page-stack">
         <div className="page-hero">
           <p className="eyebrow">Demo request received</p>
-          <h1>Thank you. Your demo request has been received.</h1>
+          <h1>Your request has been submitted.</h1>
           <p className="page-lead">
-            We will review your request and follow up through the appropriate
-            next step.
+            Thank you for your interest in Iknos Docket. We will review the
+            request and follow up with the next step for a direct product walkthrough.
           </p>
         </div>
 
@@ -17,12 +17,12 @@ export default function DemoThankYouPage() {
           <div>
             <h2>What happens next</h2>
             <p>
-              We will review the information you submitted and reply if a demo
-              is the right route.
+              We review demo requests to understand the practice context and
+              whether a walkthrough is the right next step.
             </p>
             <p>
-              If your situation appears better suited to a pilot evaluation, we
-              may point you in that direction instead.
+              If appropriate, follow-up will include scheduling and any context
+              needed before the session.
             </p>
           </div>
 
