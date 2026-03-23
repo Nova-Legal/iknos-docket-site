@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function V2Page() {
+export default function HomePage() {
   return (
     <div className="v2-shell">
       <section className="v2-hero v2-hero--clean">
@@ -13,9 +13,9 @@ export default function V2Page() {
             </h1>
 
             <p className="v2-hero__body v2-hero__body--clean">
-              Docket is being built specifically for Ontario criminal defence counsel.
-              It is designed to make difficult disclosure more workable: clearer
-              structure, better continuity, and stronger control inside a live file.
+              Iknos Docket is built for Ontario criminal defence workflow:
+              mixed-format disclosure, clearer review continuity, and stronger
+              control inside a live file.
             </p>
 
             <div className="v2-hero__actions">
@@ -61,9 +61,9 @@ export default function V2Page() {
                 practice management, or wide review categories.
               </p>
               <p>
-                Docket is narrower by design: Ontario criminal-defence workflow,
-                mixed-format disclosure, change over time, timeline pressure, and
-                exact-detail recovery inside a live file.
+                Docket is narrower by design: Ontario criminal defence workflow,
+                mixed-format disclosure, change over time, and exact-detail recovery
+                inside a live file.
               </p>
             </div>
           </div>
@@ -104,10 +104,10 @@ export default function V2Page() {
           <div className="v2-cta-shell">
             <div className="v2-cta">
               <p className="v2-eyebrow">Next step</p>
-              <h2>See whether Docket fits your practice.</h2>
+              <h2>See the product in a direct walkthrough.</h2>
               <p>
-                Request a demo for a direct walkthrough, or apply for the pilot if
-                you are evaluating operational fit inside active criminal defence workflow.
+                Request a demo for a practical walkthrough, or apply for the pilot
+                if you are evaluating fit inside active criminal defence workflow.
               </p>
               <div className="v2-hero__actions">
                 <Link href="/demo" className="v2-btn v2-btn--primary">
@@ -121,8 +121,8 @@ export default function V2Page() {
 
             <div className="v2-cta-rail">
               <div className="v2-cta-rail__item">
-                <p className="v2-cta-rail__label">Route</p>
-                <p className="v2-cta-rail__value">Direct walkthrough</p>
+                <p className="v2-cta-rail__label">Use case</p>
+                <p className="v2-cta-rail__value">Difficult disclosure review</p>
               </div>
               <div className="v2-cta-rail__item">
                 <p className="v2-cta-rail__label">Evaluation</p>
@@ -130,7 +130,7 @@ export default function V2Page() {
               </div>
               <div className="v2-cta-rail__item">
                 <p className="v2-cta-rail__label">Posture</p>
-                <p className="v2-cta-rail__value">Serious, selective rollout</p>
+                <p className="v2-cta-rail__value">Ontario-first, local-first</p>
               </div>
             </div>
           </div>

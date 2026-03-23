@@ -2,118 +2,159 @@ import Link from "next/link";
 
 export default function ProductPage() {
   return (
-    <section className="section">
-      <div className="container page-stack">
-        <div className="page-hero">
-          <p className="eyebrow">Product overview</p>
-          <h1>A more usable criminal defence working file.</h1>
-          <p className="page-lead">
-            Iknos Docket is built to help criminal defence counsel turn
-            disclosure volume into a clearer review environment: stronger file
-            structure, better continuity, and more disciplined movement toward
-            preparation.
-          </p>
-          <div className="hero-actions">
-            <Link href="/demo" className="btn btn-primary">
-              Request a Demo
-            </Link>
-            <Link href="/pilot" className="btn btn-secondary">
-              Apply for Pilot
-            </Link>
-          </div>
-        </div>
+    <div className="v2-shell">
+      <section className="v2-hero v2-hero--clean">
+        <div className="v2-container">
+          <div className="v2-hero__main v2-hero__main--clean">
+            <p className="v2-eyebrow">Product</p>
 
-        <div className="content-grid">
-          <div>
-            <h2>What Iknos Docket does</h2>
-            <p>
-              At a practical level, the product helps counsel move from raw
-              disclosure and scattered material toward a more controlled working
-              file.
-            </p>
-            <p>
-              That includes stronger organization of case material, more
-              structured review, better visibility into issues and pressure
-              points, and a file that remains more coherent as the matter
-              develops.
-            </p>
-          </div>
+            <h1 className="v2-hero__title v2-hero__title--clean">
+              Built for the hard parts of criminal disclosure review.
+            </h1>
 
-          <div>
-            <h2>What that means in practice</h2>
-            <p>
-              Instead of treating disclosure as a pile of disconnected inputs,
-              Iknos Docket is intended to support a more disciplined review
-              environment: clearer structure, clearer continuity, and clearer
-              progress toward defence preparation.
+            <p className="v2-hero__body v2-hero__body--clean">
+              Iknos Docket is built for Ontario criminal defence workflow:
+              mixed-format disclosure, change over time, timeline pressure, and
+              exact-detail recovery inside a live file.
             </p>
-            <p>
-              The point is not to add another layer of software noise. The point
-              is to reduce friction inside the file.
-            </p>
-          </div>
-        </div>
 
-        <div className="content-grid">
-          <div>
-            <h2>Core workflow support</h2>
-            <ul className="clean-list">
-              <li>Disclosure review</li>
-              <li>Case-material organization</li>
-              <li>Issue spotting and issue review</li>
-              <li>Evidence and document structure</li>
-              <li>Preparation workflow</li>
-              <li>Working-file clarity across the life of a matter</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2>Designed for real legal workflow</h2>
-            <ul className="clean-list">
-              <li>Built for lawyer-readable review</li>
-              <li>Supports counsel judgment rather than replacing it</li>
-              <li>Intended for confidentiality-sensitive legal workflow</li>
-              <li>Reduces fragmentation across the file</li>
-              <li>Helps surface pressure points earlier</li>
-              <li>Keeps preparation anchored to organized material</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="content-grid">
-          <div>
-            <h2>What it is not</h2>
-            <p>
-              Iknos Docket is not a law firm, does not provide legal advice, and
-              does not replace counsel’s professional duties, legal judgment, or
-              case theory.
-            </p>
-            <p>
-              It is a legal workflow product intended to support review,
-              organization, and preparation in a more usable and more controlled
-              working environment.
-            </p>
-          </div>
-
-          <div>
-            <h2>Next step</h2>
-            <p>
-              If you want to evaluate whether Iknos Docket fits your practice,
-              request a demo for a direct walkthrough. If you are evaluating
-              operational fit inside active criminal defence work, apply for the
-              pilot.
-            </p>
-            <div className="hero-actions">
-              <Link href="/demo" className="btn btn-primary">
+            <div className="v2-hero__actions">
+              <Link href="/demo" className="v2-btn v2-btn--primary">
                 Request a Demo
               </Link>
-              <Link href="/pilot" className="btn btn-secondary">
+              <Link href="/pilot" className="v2-btn v2-btn--secondary">
                 Apply for Pilot
               </Link>
             </div>
+
+            <div className="v2-hero-proof">
+              <div className="v2-hero-proof__item">
+                <p className="v2-hero-proof__label">Review</p>
+                <p className="v2-hero-proof__value">Mixed-format disclosure</p>
+              </div>
+
+              <div className="v2-hero-proof__item">
+                <p className="v2-hero-proof__label">Visibility</p>
+                <p className="v2-hero-proof__value">Change over time</p>
+              </div>
+
+              <div className="v2-hero-proof__item">
+                <p className="v2-hero-proof__label">Pressure</p>
+                <p className="v2-hero-proof__value">Exact-detail recovery</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="v2-section v2-section--difference">
+        <div className="v2-container">
+          <div className="v2-difference-head">
+            <div className="v2-difference-head__intro">
+              <p className="v2-eyebrow">Capabilities</p>
+              <h2>A narrower, deeper product direction.</h2>
+            </div>
+
+            <div className="v2-difference-head__body">
+              <p>Docket is not broad legal administration software.</p>
+              <p>
+                It is built for difficult criminal disclosure workflow: fragmented
+                material, chronology pressure, version movement, and the need to
+                get back to exact detail quickly and reliably.
+              </p>
+            </div>
+          </div>
+
+          <div className="v2-difference-cards">
+            <div className="v2-difference-card">
+              <p className="v2-difference-card__eyebrow">Format</p>
+              <h3>Mixed-format disclosure</h3>
+              <p>
+                Review may have to account for scans, PDFs, images, video, audio,
+                CCTV, and other fragmented material across the life of a matter.
+              </p>
+            </div>
+
+            <div className="v2-difference-card">
+              <p className="v2-difference-card__eyebrow">Change</p>
+              <h3>Change over time</h3>
+              <p>
+                Versions shift. New material arrives. Contradictions, omissions,
+                and timeline movement can disappear unless the file is worked
+                through more deliberately.
+              </p>
+            </div>
+
+            <div className="v2-difference-card">
+              <p className="v2-difference-card__eyebrow">Chronology</p>
+              <h3>Timeline work</h3>
+              <p>
+                Criminal review often becomes chronological whether the file is
+                ready for that or not. Sequence matters. Timing matters. Alternate
+                sequences may matter too.
+              </p>
+            </div>
+
+            <div className="v2-difference-card">
+              <p className="v2-difference-card__eyebrow">Recovery</p>
+              <h3>Exact detail under pressure</h3>
+              <p>
+                The real test is whether counsel can get back to the exact
+                statement, timeline point, image, segment, or evidentiary detail
+                that matters when pressure is high.
+              </p>
+            </div>
+
+            <div className="v2-difference-card">
+              <p className="v2-difference-card__eyebrow">Handling</p>
+              <h3>Local-first posture</h3>
+              <p>
+                Sensitive working material is not treated as ordinary cloud-first
+                platform data. The emphasis is on user control and
+                confidentiality-sensitive handling.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="v2-section v2-section--cta">
+        <div className="v2-container">
+          <div className="v2-cta-shell">
+            <div className="v2-cta">
+              <p className="v2-eyebrow">Next step</p>
+              <h2>See the product in a direct walkthrough.</h2>
+              <p>
+                Request a demo for a practical walkthrough, or apply for the pilot
+                if you are evaluating fit inside active criminal defence workflow.
+              </p>
+              <div className="v2-hero__actions">
+                <Link href="/demo" className="v2-btn v2-btn--primary">
+                  Request a Demo
+                </Link>
+                <Link href="/pilot" className="v2-btn v2-btn--secondary">
+                  Apply for Pilot
+                </Link>
+              </div>
+            </div>
+
+            <div className="v2-cta-rail">
+              <div className="v2-cta-rail__item">
+                <p className="v2-cta-rail__label">Use case</p>
+                <p className="v2-cta-rail__value">Difficult disclosure review</p>
+              </div>
+              <div className="v2-cta-rail__item">
+                <p className="v2-cta-rail__label">Evaluation</p>
+                <p className="v2-cta-rail__value">Pilot consideration</p>
+              </div>
+              <div className="v2-cta-rail__item">
+                <p className="v2-cta-rail__label">Posture</p>
+                <p className="v2-cta-rail__value">Ontario-first, local-first</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

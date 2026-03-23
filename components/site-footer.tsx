@@ -10,31 +10,34 @@ export function SiteFooter() {
             <Image
               src="/branding/iknos-docket-lockup.svg"
               alt="IKNOS Docket"
-              width={300}
-              height={74}
+              width={236}
+              height={58}
               className="site-footer__logo-image"
             />
           </Link>
 
           <p className="site-footer__copy">
-            Iknos Docket is built for Ontario criminal defence review,
-            clearer disclosure structure, and a more disciplined preparation process.
+            Iknos Docket is built for Ontario criminal defence workflow: mixed-format disclosure, clearer review continuity, and stronger control inside a live file.
           </p>
 
-          <p className="site-footer__meta">iknos@iknosdocket.com</p>
+          <div className="site-footer__meta-stack">
+            <p className="site-footer__meta">IKNOS — Built for the hard part.</p>
+            <p className="site-footer__meta">iknos@iknosdocket.com</p>
+          </div>
         </div>
 
-        <div>
+        <div className="site-footer__col">
           <p className="site-footer__heading">Navigation</p>
           <div className="site-footer__links">
             <Link href="/">Home</Link>
             <Link href="/product">Product</Link>
             <Link href="/trust">Trust</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/contact">Contact</Link>
           </div>
         </div>
 
-        <div>
+        <div className="site-footer__col">
           <p className="site-footer__heading">Engage</p>
           <div className="site-footer__links">
             <Link href="/demo">Request a Demo</Link>
@@ -46,9 +49,9 @@ export function SiteFooter() {
       </div>
 
       <div className="container site-footer__bottom">
-        <span>© {new Date().getFullYear()} Iknos Docket. All rights reserved.</span>
-        <span className="site-footer__bottom-sep">•</span>
-        <span>Serious workflow for serious defence work.</span>
+        <span>© {new Date().getFullYear()} Iknos Docket</span>
+        <span className="site-footer__bottom-dot">•</span>
+        <span>Ontario criminal defence workflow</span>
       </div>
     </footer>
   );
