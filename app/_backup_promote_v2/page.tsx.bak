@@ -1,0 +1,86 @@
+import Link from "next/link";
+import { CtaBand } from "@/components/cta-band";
+import {
+  MarketingHero,
+  MarketingPanel,
+  MarketingSection,
+  ProofBand,
+  NarrativeSplit
+} from "@/components/marketing/marketing-shell";
+
+export default function HomePage() {
+  return (
+    <>
+      <MarketingHero
+        eyebrow="IKNOS • Docket • Ontario criminal defence workflow"
+        title={
+          <>
+            Criminal disclosure
+            <br />
+            with more control
+          </>
+        }
+        body="Docket is being built specifically for Ontario criminal defence counsel. It is designed to make difficult disclosure more workable: clearer structure, better continuity, and stronger control over what matters inside a live file."
+        actions={
+          <>
+            <Link href="/product" className="btn btn-primary">Explore Product</Link>
+            <Link href="/demo" className="btn btn-secondary">Request a Demo</Link>
+          </>
+        }
+        aside={
+          <MarketingPanel title="Why this category matters">
+            <div>
+              <h3>Mixed-format disclosure</h3>
+              <p>Criminal files can involve scans, PDFs, images, video, audio, CCTV, and other fragmented material across one matter.</p>
+            </div>
+            <div>
+              <h3>Change over time</h3>
+              <p>Revisions, contradictions, and timeline movement can disappear unless the file is worked through in a more controlled way.</p>
+            </div>
+            <div>
+              <h3>Exact detail under pressure</h3>
+              <p>Counsel may need to get back to a precise statement, image, segment, or timeline point without losing the thread of the record.</p>
+            </div>
+          </MarketingPanel>
+        }
+      />
+
+      <MarketingSection
+        eyebrow="Why Docket is different"
+        title="Vertical depth for Ontario criminal defence."
+        intro="Broad legal-tech platforms are usually built across firm operations, practice management, or wide review categories. Docket is narrower by design."
+      >
+        <NarrativeSplit
+          leftTitle="Not generic legal administration"
+          leftBody="Docket is being built specifically around Ontario criminal-defence workflow rather than broad, horizontal legal software categories."
+          rightTitle="More than storage"
+          rightBody="The value is not just where material sits. The value is how difficult disclosure becomes more workable over time."
+        />
+      </MarketingSection>
+
+      <MarketingSection eyebrow="Three things we care about" title="Capability, control, and handling posture.">
+        <ProofBand
+          items={[
+            {
+              label: "Format",
+              value: "Mixed-format review",
+              body: "Built for difficult disclosure, not just tidy documents."
+            },
+            {
+              label: "Focus",
+              value: "Ontario-first",
+              body: "Designed specifically around Ontario criminal-defence workflow."
+            },
+            {
+              label: "Handling",
+              value: "Local-first posture",
+              body: "Built with a more careful model for confidentiality-sensitive material."
+            }
+          ]}
+        />
+      </MarketingSection>
+
+      <CtaBand />
+    </>
+  );
+}
